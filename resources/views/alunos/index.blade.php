@@ -7,10 +7,25 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Alunos Cadastrados</h1>
+  <a href="{{url('alunos/create')}}">Adicionar Novo</a>
 
-  @foreach ($alunos as $aluno)
-    <br> Id: {{ $aluno->id }} Nome: {{ $aluno->name }} E-mail: {{ $aluno->email }}
+  <br>
+
+  @foreach ($alunos as $alunos)
+      <br>
+      {{ $alunos->id }}
+      {{ $alunos->nome }}
+      {{ $alunos->email }}
+
+      <form action="{{ route('alunos.destroy',$alunos->id) }}" method="POST">
+      @csrf
+      @method('DELETE')
+      <button type="submit">Excluir</button>
+    </form>
+
+    <a href="{{url('alunos/'.$alunos->id.'/edit')}}">
+      <button> Editar</button>
+    </a>
   @endforeach
 </body>
 </html>

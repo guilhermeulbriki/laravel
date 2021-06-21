@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CursosController;
+use App\Http\Controllers\AlunosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +19,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/alunos', 'App\Http\Controllers\AlunosController@index');
+Route::resource('alunos', AlunosController::class);
+Route::resource('cursos', CursosController::class);
