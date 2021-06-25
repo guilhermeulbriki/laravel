@@ -14,6 +14,12 @@
         <input type="text" name="nome" value="{{$alunos->nome}}">
         <br> <label>E-mail:</label>
         <input type="email" name="email" value="{{$alunos->email}}">
+        <br> <label>CPF:</label>
+        <input type="text" name="cpf" value="{{$alunos->cpf}}">
+        <br> <label>Endereço:</label>
+        <input type="text" name="endereco" value="{{$alunos->endereco}}">
+        <br> <label>Telefone:</label>
+        <input type="text" name="telefone" value="{{$alunos->telefone}}">
         <br><button type="submit">Alterar</button>
     </form>
 </body>

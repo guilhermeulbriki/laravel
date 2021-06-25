@@ -16,6 +16,7 @@
         <br>
         {{ $cursos->id }}
         {{ $cursos->nome }}
+        {{ $cursos->descricao }}
 
         <form action="{{ route('cursos.destroy',$cursos->id) }}" method="POST">
             @csrf

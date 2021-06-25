@@ -13,6 +13,12 @@
         <input type="text" name="nome" placeholder="Nome">
         <br> <label>E-mail:</label>
         <input type="email" name="email" placeholder="E-mail">
+        <br> <label>CPF:</label>
+        <input type="text" name="cpf" placeholder="000-000-000-00">
+        <br> <label>Endereço:</label>
+        <input type="text" name="endereco" placeholder="Endereço">
+        <br> <label>Telefone:</label>
+        <input type="text" name="telefone" placeholder="(00) 00000-0000">
         <br><button type="submit">Cadastrar</button>
     </form>
 </body>

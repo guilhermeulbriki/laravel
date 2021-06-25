@@ -17,6 +17,9 @@ class MigrationAluno extends Migration
             $table->increments('id');
             $table->string('nome');
             $table->text('email');
+            $table->text('cpf');
+            $table->text('endereco');
+            $table->text('telefone');
             $table->timestamps();
         });
     }

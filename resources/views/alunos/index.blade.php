@@ -16,8 +16,11 @@
       {{ $alunos->id }}
       {{ $alunos->nome }}
       {{ $alunos->email }}
+      {{ $alunos->cpf }}
+      {{ $alunos->endereco }}
+      {{ $alunos->telefone }}
 
-      <form action="{{ route('alunos.destroy',$alunos->id) }}" method="POST">
+    <form action="{{ route('alunos.destroy',$alunos->id) }}" method="POST">
       @csrf
       @method('DELETE')
       <button type="submit">Excluir</button>
